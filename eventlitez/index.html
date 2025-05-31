@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script  src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="box"></div>
+    </div>
+    <div class="header">
+        <div class="logo"> <img src="assets/eventlitz.-removebg-preview (1).png" height="195" weigth="90"></div>
+    </div>
+  <div class="container">
+    <h1>Add Your Event</h1>
+    <form id="eventForm">
+      <input type="text" id="eventName" placeholder="Event Name" required>
+      <input type="date" id="eventDate" required>
+      <input type="time" id="eventTime" required>
+      <input type="text" id="eventLocation" placeholder="Location" required>
+      <button type="submit" id="addBtn">Add Event</button>
+    </form>
+    <button id="viewBtn">View Events</button>
+  </div>
+
+  <div id="overlay"></div>
+
+  <div id="eventDrawer">
+    <button id="closeDrawer">&times;</button>
+    <h2>Event List</h2>
+    <div id="eventList"></div>
+    <p id="noEventsMsg">No events registered.</p>
+  </div>
+</body>
+</html>
